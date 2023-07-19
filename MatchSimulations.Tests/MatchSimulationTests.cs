@@ -7,16 +7,13 @@ namespace MatchSimulations.Tests
     {
         [Theory]
         [InlineData("Home Team", 10, 0, 0, 0, 0, 0, 0, 0, "Away Team", 10, 0, 0, 0, 0, 0, 0, 0 )]
-        [InlineData("Barcelona", 20, 5, 15, 5, 0, 0, 20, 3, "Real Madrid", 18, 5, 12, 4, 1, 0, 15, 6)]
-        [InlineData("Manchester United", 16, 8, 24, 7, 0, 1, 22, 5, "Liverpool", 17, 8, 27, 8, 0, 0, 28, 10)]
-        [InlineData("Juventus", 14, 6, 18, 4, 1, 1, 13, 8, "AC Milan", 14, 6, 18, 4, 1, 1, 10, 5)]
-        [InlineData("Bayern Munich", 22, 10, 30, 9, 0, 1, 32, 7, "Borussia Dortmund", 20, 10, 30, 9, 0, 1, 28, 10)]
-        [InlineData("Chelsea", 18, 7, 21, 6, 1, 0, 22, 9, "Arsenal", 16, 7, 20, 5, 2, 0, 20, 12)]
-        [InlineData("Manchester City", 23, 9, 30, 9, 0, 0, 30, 5, "Tottenham Hotspur", 20, 9, 27, 8, 1, 0, 25, 12)]
-        [InlineData("Paris Saint-Germain", 22, 10, 31, 10, 0, 0, 35, 6, "Olympique Marseille", 18, 10, 23, 7, 2, 1, 20, 11)]
-        [InlineData("Atletico Madrid", 20, 8, 27, 8, 0, 0, 25, 4, "Real Betis", 15, 8, 21, 5, 2, 1, 18, 14)]
-        [InlineData("FC Porto", 16, 5, 15, 4, 1, 0, 12, 7, "SL Benfica", 15, 5, 12, 3, 2, 0, 10, 8)]
-        [InlineData("Boca Juniors", 17, 6, 18, 5, 1, 0, 15, 6, "River Plate", 19, 6, 21, 7, 0, 0, 20, 8)]
+        [InlineData("Boca Juniors", 7, 6, 18, 5, 1, 0, 15, 6, "River Plate", 9, 6, 21, 7, 0, 0, 20, 8)]
+        [InlineData("Barcelona", 1, 5, 7, 2, 1, 2, 8, 6, "Real Madrid", 2, 5, 10, 3, 1, 1, 9, 5)]
+        [InlineData("Manchester United", 3, 4, 10, 3, 0, 1, 10, 3, "Liverpool", 2, 4, 7, 2, 1, 1, 6, 5)]
+        [InlineData("Juventus", 4, 3, 12, 4, 0, 0, 14, 3, "AC Milan", 5, 3, 15, 5, 0, 0, 15, 2)]
+        [InlineData("Bayern Munich", 6, 5, 18, 5, 0, 0, 20, 2, "Borussia Dortmund", 7, 5, 21, 7, 0, 0, 21, 4)]
+        [InlineData("Chelsea", 8, 6, 20, 6, 0, 0, 25, 5, "Arsenal", 9, 6, 27, 9, 0, 0, 30, 3)]
+        [InlineData("Paris Saint-Germain", 10, 8, 24, 7, 1, 0, 30, 6, "Olympique Marseille", 10, 8, 27, 8, 0, 1, 32, 5)]
         public void SimulateMatch_ValidTeamsInformation_UpdateTeamStatisticsCorrectly(
             string homeTeamName, int homeTeamStrength, int homeTeamMatchesPlayed, int homeTeamPoints, int homeTeamWins, int homeTeamLosses, int homeTeamDraws, int homeTeamGoalsFor, int homeTeamGoalsAgainst,
             string awayTeamName, int awayTeamStrength, int awayTeamMatchesPlayed, int awayTeamPoints, int awayTeamWins, int awayTeamLosses, int awayTeamDraws, int awayTeamGoalsFor, int awayTeamGoalsAgainst)
