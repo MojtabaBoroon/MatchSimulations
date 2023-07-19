@@ -1,0 +1,91 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "MatchSimulations.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MatchSimulations.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MatchSimulations.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MatchSimulations.Domain/1.0.0": {
+      "type": "project",
+      "path": "../MatchSimulation.Domain/MatchSimulations.Domain.csproj",
+      "msbuildProject": "../MatchSimulation.Domain/MatchSimulations.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "MatchSimulations.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Mojtaba Boroon\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Mojtaba Boroon\\Desktop\\MiniClip\\MatchSimulation\\MatchSimulation.Application\\MatchSimulations.Application.csproj",
+      "projectName": "MatchSimulations.Application",
+      "projectPath": "C:\\Users\\Mojtaba Boroon\\Desktop\\MiniClip\\MatchSimulation\\MatchSimulation.Application\\MatchSimulations.Application.csproj",
+      "packagesPath": "C:\\Users\\Mojtaba Boroon\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mojtaba Boroon\\Desktop\\MiniClip\\MatchSimulation\\MatchSimulation.Application\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Mojtaba Boroon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\Mojtaba Boroon\\Desktop\\MiniClip\\MatchSimulation\\MatchSimulation.Domain\\MatchSimulations.Domain.csproj": {
+              "projectPath": "C:\\Users\\Mojtaba Boroon\\Desktop\\MiniClip\\MatchSimulation\\MatchSimulation.Domain\\MatchSimulations.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
